@@ -1,10 +1,15 @@
+.left-img {
+    width: 300px;
+}
+
 .header {
     width: 100%;
     height: 100vh;
     background:
-        linear-gradient(rgba($color-black, 0.8), rgba($color-black, 0.6)),
+        linear-gradient(rgba($color-black, 0.4), rgba($color-black, 0.6)),
         url(../images/bg.jpeg) center no-repeat;
     background-size: cover;
+    position: relative;
 
     .brand {
         @include centering(15%);
@@ -76,4 +81,40 @@
     padding: 70px 0;
     @include flexLayout;
     flex-direction: column;
+
+    &-header {
+        display: flex;
+        align-items: center;
+        margin-bottom: 70px;
+    }
+
+    .social-media {
+        display: flex;
+
+        width: 300px;
+        justify-content: space-between;
+        margin-bottom: 70px;
+
+        &-item {
+            list-style: none;
+        }
+
+        &-link {
+            text-decoration: none;
+            font-size: 50px;
+            color: $color-secondary;
+            transition: color 0.7s;
+
+            &:hover {
+                color: $color-primary;
+            }
+        }
+    }
+
+    &-copyright-paragraph {
+        font-family: $font-josefinSans;
+        font-size: 18px;
+        color: $color-third;
+        @include textStyles(capitalize);
+    }
 }

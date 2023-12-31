@@ -1,14 +1,13 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faUtensils } from "@fortawesome/free-solid-svg-icons";
+import { FaUtensils } from "react-icons/fa";
 
 const Header = () => {
   return (
     <header className="header">
       <div className="brand">
         <a href="#" className="logo">
-          <FontAwesomeIcon icon={faUtensils} />
+          <FaUtensils />
         </a>
         <div>
           <h1 className="main-name">Sass</h1>

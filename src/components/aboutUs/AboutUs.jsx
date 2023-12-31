@@ -1,7 +1,6 @@
 import React from "react";
 import aboutUs from "../../images/about-us-img.png";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faStarOfLife } from "@fortawesome/free-solid-svg-icons";
+import { FaStarOfLife } from "react-icons/fa";
 
 const AboutUs = () => {
   return (
@@ -13,9 +12,9 @@ const AboutUs = () => {
         <h1 className="main-heading">About Us</h1>
         <h3 className="sub-heading">Introduce To Sass Dishes</h3>
         <div className="stars">
-          <FontAwesomeIcon icon={faStarOfLife} className="star" />
-          <FontAwesomeIcon icon={faStarOfLife} className="star" />
-          <FontAwesomeIcon icon={faStarOfLife} className="star" />
+          <FaStarOfLife className="star" />
+          <FaStarOfLife className="star" />
+          <FaStarOfLife className="star" />
         </div>
         <p className="description">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque,
@@ -26,9 +25,9 @@ const AboutUs = () => {
           veniam in laboriosam accusantium doloribus cum!
         </p>
         <div className="stars">
-          <FontAwesomeIcon icon={faStarOfLife} className="star" />
-          <FontAwesomeIcon icon={faStarOfLife} className="star" />
-          <FontAwesomeIcon icon={faStarOfLife} className="star" />
+          <FaStarOfLife className="star" />
+          <FaStarOfLife className="star" />
+          <FaStarOfLife className="star" />
         </div>
         <button type="button" className="main-btn">
           Read More
