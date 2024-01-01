@@ -45,7 +45,7 @@ const Footer = () => {
 
       <div className="footer-copyright">
         <p className="footer-copyright-paragraph">
-          &copy; Copyright. Mehmet Deniz Gucdemir. All Rights Reserved
+          &copy; Copyright. Sass Restaurant. All Rights Reserved
         </p>
       </div>
     </footer>

@@ -1,3 +1,29 @@
+.hamburger-menu {
+    width: 40px;
+    height: 40px;
+    position: fixed;
+    top: 15%;
+    right: 5%;
+    z-index: 300;
+
+    .menu {
+        @extend %fullSpace;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        cursor: pointer;
+        transition: transform 0.5s;
+
+        &-line {
+            width: 100%;
+            height: 4px;
+            background-color: $color-primary;
+            transform-origin: right;
+            transition: transform 0.5s;
+        }
+    }
+}
+
 .logo {
     font-size: 70px;
     color: $color-primary;
@@ -6,7 +32,14 @@
     border: 3px solid $color-primary;
     border-radius: 50%;
     margin-right: 20px;
+    text-decoration: none;
     @include flexLayout;
+
+    @media (max-width: 1000px) {
+        font-size: 50px;
+        width: 90px;
+        height: 90px;
+    }
 }
 
 .main-name {
@@ -14,6 +47,10 @@
     font-size: 50px;
     color: $color-secondary;
     @include textStyles;
+
+    @media (max-width: 1000px) {
+        font-size: 40px;
+    }
 }
 
 .sub-name {
@@ -30,6 +67,14 @@
     font-weight: 300;
     color: $color-primary;
     margin-bottom: 40px;
+
+    @media (max-width: 1600px) {
+        font-size: 80px;
+    }
+
+    @media (max-width: 1000px) {
+        font-size: 60px;
+    }
 }
 
 .sub-heading {
@@ -38,6 +83,21 @@
     font-weight: 300;
     color: $color-secondary;
     margin-bottom: 80px;
+    text-align: center;
+
+    @media (max-width: 1600px) {
+        font-size: 50px;
+        margin-bottom: 50px;
+    }
+
+    @media (max-width: 1300px) {
+        font-size: 40px;
+        margin-bottom: 30px;
+    }
+
+    @media (max-width: 1000px) {
+        font-size: 30px;
+    }
 }
 
 .main-btn {

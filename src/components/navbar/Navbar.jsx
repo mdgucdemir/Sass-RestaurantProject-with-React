@@ -5,9 +5,9 @@ import React from "react";
 const Navbar = () => {
   return (
     <nav className="navbar">
-      <input type="checkbox" id="check" className="checkbox" />
+      <input type="checkbox" id="check" className="checkbox" hidden />
       <div className="hamburger-menu">
-        <label htmlFor="check">
+        <label htmlFor="check" className="menu">
           <div className="menu-line menu-line-1"></div>
           <div className="menu-line menu-line-2"></div>
           <div className="menu-line menu-line-3"></div>
